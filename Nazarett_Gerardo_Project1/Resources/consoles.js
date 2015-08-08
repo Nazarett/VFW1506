@@ -3,15 +3,14 @@ var myConsoles = ["Atari", "Colecovision", "Nintendo", "Sega", "Playstation", "X
 var nextDisplay = function(){
 	displayText.hide();
 	
-	var consolesLabel = Ti.UI.createLabel({
+	var nConsolesLabel = Ti.UI.createLabel({
 		text: myConsoles[1],
 		color: "black",
 		font: {fontSize: 30, familyFont: "times roman", fontWeight: "bold", fontStyle: "Italic"},
 		textAlign: "center"
 	});
 	
-	mainScreen.add(consolesLabel);
+	mainScreen.add(nConsolesLabel);
 };
 
 nButtonView.addEventListener("click", nextDisplay);
-
