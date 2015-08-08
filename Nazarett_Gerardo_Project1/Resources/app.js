@@ -9,7 +9,7 @@ var mainScreen = Ti.UI.createWindow({
 });
 
 var myTopView = Ti.UI.createView({
-	backgroundColor: "orange",
+	backgroundColor: "#c5122f",
 	height: 50,
 	top: 20
 	
@@ -25,7 +25,7 @@ var myTitle = Ti.UI.createLabel({
 });
 
 var pButtonView = Ti.UI.createView({
-	backgroundColor: "green",
+	backgroundColor: "gray",
 	borderRadius: 4,
 	borderWidth: 1,
 	width: 100,
@@ -43,7 +43,7 @@ var pText = Ti.UI.createLabel({
 });
 
 var nButtonView = Ti.UI.createView({
-	backgroundColor: "green",
+	backgroundColor: "gray",
 	borderRadius: 4,
 	borderWidth: 1,
 	width: 100,
@@ -62,7 +62,8 @@ var nText = Ti.UI.createLabel({
 var displayView = Ti.UI.createView({
 	backgroundColor: "white",
 	borderRadius: 5,
-	borderWidth: 1,
+	borderColor: "gray",
+	borderWidth: 3,
 	width: 200,
 	height: 300,
 	top: 80,

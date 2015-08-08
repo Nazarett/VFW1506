@@ -1,0 +1,28 @@
+var myConsoles = ["Atari", "Colecovision", "Nintendo", "Sega", "Playstation", "Xbox"];
+
+var nextDisplay = function(){
+	displayText.hide();
+	
+	var consolesLabel = Ti.UI.createLabel({
+		text: myConsoles[1],
+		color: "black",
+		font: {fontSize: 30, familyFont: "times roman", fontWeight: "bold", fontStyle: "Italic"},
+		textAlign: "center"
+	});
+	
+	mainScreen.add(consolesLabel);
+};
+
+var previousDisplay = function(){
+	displayText.hide();
+	
+	var consolesLabel = Ti.UI.createLabel({
+		text: myConsoles[0],
+		color: "black",
+		font: {fontSize: 30, familyFont: "times roman", fontWeight: "bold", fontStyle: "Italic"},
+		textAlign: "center"
+	});
+};
+
+nButtonView.addEventListener("click", nextDisplay);
+pButtonView.addEventListener("click", previousDisplay);

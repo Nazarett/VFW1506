@@ -1,6 +1,6 @@
 var myConsoles = ["Atari", "Colecovision", "Nintendo", "Sega", "Playstation", "Xbox"];
 
-var changeDisplay = function(){
+var nextDisplay = function(){
 	displayText.hide();
 	
 	var consolesLabel = Ti.UI.createLabel({
@@ -13,4 +13,5 @@ var changeDisplay = function(){
 	mainScreen.add(consolesLabel);
 };
 
-nButtonView.addEventListener("click", changeDisplay);
+nButtonView.addEventListener("click", nextDisplay);
+
