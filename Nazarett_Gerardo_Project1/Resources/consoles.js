@@ -11,6 +11,9 @@ var nextDisplay = function(){
 	});
 	
 	mainScreen.add(nConsolesLabel);
+	
 };
 
 nButtonView.addEventListener("click", nextDisplay);
+
+
