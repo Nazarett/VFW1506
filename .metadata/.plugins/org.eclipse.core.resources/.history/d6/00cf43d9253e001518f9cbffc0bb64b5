@@ -1,0 +1,13 @@
+var myConsoles = ["Atari", "Colecovision", "Nintendo", "Sega", "Playstation", "Xbox"];
+
+var nextDisplay = function(){
+	text: myConsoles[1]
+	
+	
+	mainScreen.add(nConsolesLabel);
+	
+};
+
+nButtonView.addEventListener("click", nextDisplay);
+
+
