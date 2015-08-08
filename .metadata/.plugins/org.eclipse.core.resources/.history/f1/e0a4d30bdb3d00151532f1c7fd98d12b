@@ -1,0 +1,27 @@
+Ti.UI.setBackgroundColor("#000");
+
+var mainScreen = Ti.UI.createWindow({
+	title: "Main screen", //Only for android
+	backgroundColor: "#fff"
+	
+});
+var myFirstButton = Ti.UI.createView({
+	backgroundColor:"orange",
+	borderRadius:5,
+	borderWidth:1,
+	width:110,
+	height:40,
+	bottom:20,
+	left:20
+});
+var mySecondButton = Ti.UI.createView({
+	baackgroundColor:"orange",
+	borderRadius:10,
+	borderWidth:5,
+	width:100,
+	height:35,
+	bottom:20,
+	right:20
+}); 
+mainScreen.add(myFirstButton,mySecondView);
+mainScreen.open();
