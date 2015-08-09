@@ -1,0 +1,37 @@
+
+
+var nextDisplay = function(){
+	
+	var cConsolesLabel = Ti.UI.createLabel({
+		text: myConsoles[1],
+		color: "black",		font: {fontSize: 30, familyFont: "times roman", fontWeight: "bold", fontStyle: "Italic"},
+		textAlign: "center"
+	});
+	
+		var nConsolesLabel = Ti.UI.createLabel({
+		text: myConsoles[2],
+		color: "black",
+		font: {fontSize: 30, familyFont: "times roman", fontWeight: "bold", fontStyle: "Italic"},
+		textAlign: "center"
+	});
+	
+	mainScreen.add(cConsolesLabel);
+	mainScreen.add(nConsolesLabel);
+};
+
+var previousDisplay = function(){
+	
+	var pConsolesLabel = Ti.UI.createLabel({
+		text: myConsoles[5],
+		color: "black",
+		font: {fontSize: 30, familyFont: "times roman", fontWeight: "bold", fontStyle: "Italic"},
+		textAlign: "center"
+	});
+	
+	mainScreen.add(pConsolesLabel);
+	
+};
+
+nButtonView.addEventListener("click", nextDisplay);
+pButtonView.addEventListener("click", previousDisplay);
+

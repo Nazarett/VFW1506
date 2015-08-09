@@ -3,14 +3,13 @@
 var nextDisplay = function(){
 	displayText.hide();
 	
-	var nConsolesLabel = Ti.UI.createLabel({
+	var cConsolesLabel = Ti.UI.createLabel({
 		text: myConsoles[1],
-		color: "black",
-		font: {fontSize: 30, familyFont: "times roman", fontWeight: "bold", fontStyle: "Italic"},
+		color: "black",		font: {fontSize: 30, familyFont: "times roman", fontWeight: "bold", fontStyle: "Italic"},
 		textAlign: "center"
 	});
-	
-	mainScreen.add(nConsolesLabel);
+
+	mainScreen.add(cConsolesLabel);
 	
 };
 
