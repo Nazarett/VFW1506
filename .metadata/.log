@@ -22431,3 +22431,12 @@ Caused by: java.io.IOException: error=7, Argument list too long
 	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
 	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1028)
 	... 16 more
+
+!ENTRY com.aptana.git.core 4 1 2015-08-15 01:29:28.651
+!MESSAGE Errors occurred while refreshing git index
+!SUBENTRY 1 com.aptana.git.core 4 0 2015-08-15 01:29:28.652
+!MESSAGE Failed to acquire lock for git repository.
+!SUBENTRY 1 com.aptana.git.core 4 0 2015-08-15 01:29:28.652
+!MESSAGE Failed to acquire lock for git repository.
+!SUBENTRY 1 com.aptana.git.core 4 0 2015-08-15 01:29:28.652
+!MESSAGE Failed to acquire lock for git repository.
