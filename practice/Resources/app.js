@@ -51,7 +51,7 @@ var playing= {
 };
 
 var mainWindow = Ti.UI.createWindow({
-	backgroundColor: "#cccccc"
+	backgroundColor: "#afb0ad"
 });
 
 var newWindow = Ti.UI.iOS.createNavigationWindow({

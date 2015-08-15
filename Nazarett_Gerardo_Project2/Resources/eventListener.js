@@ -4,7 +4,7 @@ var sDetail = function(){
 	});
 	
 	var showsTitleView = Ti.UI.createView({
-	backgroundColor: "#ccc",
+	backgroundColor: "#2f98b2",
 	height: 65,
 	top: 0
 	});
@@ -17,7 +17,8 @@ var sDetail = function(){
 	
 	var showsTitleLabel = Ti.UI.createLabel({
 		text:this.title,
-		font: {fontSize: 20, familyFont: "Arial", fontStyle: "bold"},
+		color:"#fff",
+		font: {fontSize: 20, familyFont: "Times Roman", fontStyle: "bold"},
 		textAlign: "center",
 		width: "100%",
 		top: 30
@@ -33,10 +34,10 @@ var sDetail = function(){
 		
 		var closeButton = Ti.UI.createLabel({
 			text: "Previous",
-			backgroundColor: "#333",
+			backgroundColor: "#2f98b2",
 			color: "#fff",
 			height: 45,	
-			font: {fontSize: 20, familyFont: "Arial"},
+			font: {fontSize: 20, familyFont: "Times Roman"},
 			width: "100%",
 			bottom: 0,
 			textAlign: "center"
@@ -72,7 +73,7 @@ var mDetail = function(){
 	});
 	
 	var moviesTitleView = Ti.UI.createView({
-	backgroundColor: "#ccc",
+	backgroundColor: "#2f98b2",
 	height: 65,
 	top: 0
 	});
@@ -85,7 +86,8 @@ var mDetail = function(){
 	
 	var moviesTitleLabel = Ti.UI.createLabel({
 		text:this.title,
-		font: {fontSize: 20, familyFont: "Arial", fontStyle: "bold"},
+		color:"#fff",
+		font: {fontSize: 20, familyFont: "Times Roman", fontStyle: "bold"},
 		textAlign: "center",
 		width: "100%",
 		top: 30
@@ -101,10 +103,10 @@ var mDetail = function(){
 		
 		var closeButton = Ti.UI.createLabel({
 			text: "Previous",
-			backgroundColor: "#333",
+			backgroundColor: "#2f98b2",
 			color: "#fff",
 			height: 45,	
-			font: {fontSize: 20, familyFont: "Arial"},
+			font: {fontSize: 20, familyFont: "Times Roman"},
 			width: "100%",
 			bottom: 0,
 			textAlign: "center"
