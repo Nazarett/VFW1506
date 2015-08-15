@@ -1,0 +1,5 @@
+		mainWindow.add(playingLabel);
+			seperation = playingLabel.top + playingLabel.height + 10;
+			playingLabel.addEventListener("click", info );
+			
+		}

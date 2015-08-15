@@ -1,5 +1,5 @@
 =run
-LAST_LAUNCH_TIMESTAMP=1439601042443
+LAST_LAUNCH_TIMESTAMP=1439649746000
 Nazarett_Gerardo_Project1\:launchMode=run
 Nazarett_Gerardo_Project1\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.iphone.launchShortcut.CEC16E77-6247-4D3E-9972-7DDEA4DC39A4
 Nazarett_Gerardo_Project2\:launchMode=run
@@ -11,5 +11,7 @@ nazarett_gearardo_project1\:launchMode=run
 nazarett_gearardo_project1\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.iphone.launchShortcut.4DE12B71-66B3-4619-A5BC-6A9C0678FA97
 nazarett_project1\:launchMode=run
 nazarett_project1\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.iphone.launchShortcut.4DE12B71-66B3-4619-A5BC-6A9C0678FA97
+practice\:launchMode=run
+practice\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.iphone.launchShortcut.CEC16E77-6247-4D3E-9972-7DDEA4DC39A4
 preference.show.console.onError=false
 preference.studio.perspective.version=103

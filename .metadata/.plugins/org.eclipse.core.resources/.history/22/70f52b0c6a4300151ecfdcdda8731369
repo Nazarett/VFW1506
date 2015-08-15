@@ -1,0 +1,28 @@
+//JSON
+
+var mainWindow = Ti.UI.createWindow({
+	backgraoundColor: "#f5f5f5"
+});
+
+var tv= [
+	{ 
+		"title": "Arrow", 
+		"description": "A man lost in a island for five years, finds his way back home and becomes a night vigilante to keep his city safe from crime.",
+
+	},
+	
+	{
+		"title": "Commando", 
+		"description": "John Matrix (ex-military) does everything posible to recover his kidnap daughter from some colleges of his."
+	}	
+];
+
+//console.log(tv [0].title);
+//console.log(tv [1].description);
+
+for(var i= 0; i<tv.length; i++){
+	//console.log(tv[i]);
+	for(var x in tv[i]){
+		console.log(tv[i][x]);
+	}
+}

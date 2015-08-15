@@ -1,0 +1,63 @@
+	var closeButton = Ti.UI.createLabel({
+			text: "Previous",
+			backgroundColor: "#333",
+			color: "#fff",
+			height: 45,	
+			font: {fontSize: 20, familyFont: "Arial"},
+			width: "100%",
+			bottom: 0,
+			textAlign: "center"
+			
+		});
+		
+		var sBack = function(){
+			showsDescription.close();
+		};
+		
+		closeButton.addEventListener("click", sBack);
+		
+		
+												//Loop
+										for(var i= 0, j= shows.length; i<j; i++){
+											var theRow = Ti.UI.createTableViewRow({
+												title: shows[i].title,
+												detail: shows[i].description,
+												hasChild: true
+											});
+											showsSection.add(theRow);
+											theRow.addEventListener("click", sDetail);
+											
+										}
+		
+
+	
+		var closeButton = Ti.UI.createLabel({
+			text: "Previous",
+			backgroundColor: "#333",
+			color: "#fff",
+			height: 45,	
+			font: {fontSize: 20, familyFont: "Arial"},
+			width: "100%",
+			bottom: 0,
+			textAlign: "center"
+			
+		});
+		
+		var mBack = function(){
+			moviesDescription.close();
+		};
+		
+		closeButton.addEventListener("click", mBack);
+		
+															
+															//Loop
+													for(var i= 0, j= movies.length; i<j; i++){
+														var theRow = Ti.UI.createTableViewRow({
+															title: movies[i].title,
+															detail: movies[i].description,
+															hasChild: true
+														});
+														moviesSection.add(theRow);
+														theRow.addEventListener("click", mDetail);
+													}
+

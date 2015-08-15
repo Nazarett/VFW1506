@@ -20,7 +20,7 @@ var shows = [
 var movies = [
 		{
 			title: "Best Of The Best", 
-			desription: "A group of martial artist to represent the USA taekwondo team against the Japan taekwondo team."}, 
+			description: "A group of martial artist to represent the USA taekwondo team against the Japan taekwondo team and brig the gold home."}, 
 		
 		{
 			title: "Commando", 
@@ -31,7 +31,7 @@ var movies = [
 			description: "Two LAPD (Los Angeles Police Department) are partnered unexpectedly, besides there differences and problems the manage to get the job done to put the bad guys out of commision."}];
 		
 
-//Table view and details
+//variables
 
 var mainWindow = Ti.UI.createWindow({
 	backgroundColor: "#f5f5f5"
@@ -76,87 +76,14 @@ var moviesSection = Ti.UI.createTableViewSection({
 	footerTitle: "Coming Soon"
 });
 
-var detail = function(){
-	var showsDescription = Ti.UI.createWindow({
-		backgroundColor:"#f5f5f5"
-	});
-	
-	var showsTitleView = Ti.UI.createView({
-	backgroundColor: "#fff",
-	height: 65,
-	top: 0
-	});
-	
-	var showsBorder = Ti.UI.createView({
-		backgroundColor : "#dbdbdb",
-		height: 1,
-		top: titleView.height + titleView.top
-	});
-	
-	var showsTitleLabel = Ti.UI.createLabel({
-		text:this.title,
-		font: {fontSize: 20, familyFont: "Arial", fontStyle: "bold"},
-		textAlign: "center",
-		width: "100%",
-		top: 30
-	});
-	
-	var showsDetail = Ti.UI.createLabel({
-		text: this.detail,
-		font: {fontSize: 16, familyFont: "Arial"},
-		top:showsBorder.height + showsBorder.top + 35,
-		left: 5,
-		right: 5
-		});
-		
-		var closeButton = Ti.UI.createLabel({
-			text: "Previous",
-			backgroundColor: "#333",
-			color: "#fff",
-			height: 45,	
-			font: {fontSize: 20, familyFont: "Arial"},
-			width: "100%",
-			bottom: 0,
-			textAlign: "center"
-			
-		});
-		
-		var back = function(){
-			showsDescription.close();
-		};
-		
-		closeButton.addEventListener("click", back);
-		
-	showsTitleView.add(showsTitleLabel);
-	showsDescription.add(showsTitleView, showsBorder,showsDetail, closeButton);
-	
-	showsDescription.open();
-};
-
-for(var i= 0, j= shows.length; i<j; i++){
-	var theRow = Ti.UI.createTableViewRow({
-		title: shows[i].title,
-		detail: shows[i].description,
-		hasChild: true
-	});
-	showsSection.add(theRow);
-	theRow.addEventListener("click", detail);
-}
-
-
-
-for(var i= 0, j= movies.length; i<j; i++){
-	var theRow = Ti.UI.createTableViewRow({
-		title: movies[i].title,
-		hasChild: true
-	});
-	moviesSection.add(theRow);
-}
 
 var tvSections = [showsSection, moviesSection];
 
 content.setData(tvSections);
 
+var bringFile = require("eventListener");
+
+//add and open
 titleView.add(titleLabel);
 mainWindow.add(titleView, border, content);
 mainWindow.open();
