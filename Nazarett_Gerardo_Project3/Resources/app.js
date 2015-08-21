@@ -14,22 +14,23 @@ var win = Ti.UI.createWindow({
 });
 
 var border = Ti.UI.createView({
-	backgroundColor: "cecece",
+	backgroundColor: "red",
 	height: 2,
 	width: pWidth, 
 	top: 15
 });
 
-var viewBox = Ti.UI.createScrollView({
+var viewBox = Ti.UI.createView({
 	top: 0,
+	layout: "horizontal",
 	width: pWidth,
-	backgroundColor: "fef",
-	layout: "horizontal"
+	backgroundColor: "#fef"
+	
 });
 
 for(var i = 0; i<imageCount; i ++){
 	var view = Ti.UI.createView({
-		backroundColor: "33ccff",
+		backroundColor: "orange",
 		top: margin,
 		left: margin,
 		width: size,
