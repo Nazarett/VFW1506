@@ -1,0 +1,20 @@
+var pics = Ti.UI.createWindow({
+	backgroundColor: "#f2f2f2",
+	layout: "vertical"
+});
+
+var myPics = ["jasontaylor.jpg"];
+
+var thePics = Ti.UI.createImageView({
+	image: "pics/ jasontaylor.jpg",
+	width: 50,
+	height: 50
+});
+
+console.log(myPics);
+
+pics.open(thePics);
+
+
+
+
