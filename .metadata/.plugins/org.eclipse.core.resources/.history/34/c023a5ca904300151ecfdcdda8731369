@@ -1,5 +1,0 @@
-closeButton.addEventListener("click", sBack);
-
-theRow.addEventListener("click", sDetail);
-
-closeButton.addEventListener("click", mBack);

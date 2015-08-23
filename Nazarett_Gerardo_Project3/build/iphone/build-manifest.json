@@ -14,11 +14,12 @@
 	"publisher": "GD",
 	"url": "http://",
 	"version": "1.0",
-	"description": "",
+	"description": "undefined",
 	"copyright": "2015 by GD",
 	"guid": "b418ec2d-ad69-4b99-9222-5621f88a0c2c",
 	"skipJSMinification": true,
 	"forceCopy": false,
 	"forceCopyAll": false,
-	"encryptJS": false
+	"encryptJS": true,
+	"liveview": true
 }
