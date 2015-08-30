@@ -1,7 +1,0 @@
-var title = Ti.UI.createLabel({
-	text: "Gallery",
-	color : "#fff",
-	font: { fontSize: 22, fontFamily: "Arial", fontStyle: "italic"},
-	top: 50,
-	left: 30
-});

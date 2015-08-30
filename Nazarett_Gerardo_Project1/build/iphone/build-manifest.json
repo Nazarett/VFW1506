@@ -20,6 +20,5 @@
 	"skipJSMinification": true,
 	"forceCopy": false,
 	"forceCopyAll": false,
-	"encryptJS": true,
-	"liveview": true
+	"encryptJS": false
 }

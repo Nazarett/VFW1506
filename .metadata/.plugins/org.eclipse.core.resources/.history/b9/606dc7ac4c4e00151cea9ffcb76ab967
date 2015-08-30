@@ -1,0 +1,41 @@
+Titanium.UI.setBackgroundColor('#000');
+
+var mainScreen = Ti.UI.createWindow({
+	backgroundColor: "#fff"
+});
+
+
+var topView = Ti.UI.createView({
+	backgroundColor: "#b4b8b8",
+	height: 50,
+	top: 50
+	
+});
+
+var title = Ti.UI.createLabel({
+	text: "Final Project",
+	color: "white",
+	font: {fontSize: 18, familyFont: "times roman", fontWeight: "bold", fontStyle: "Italic"},
+	top: 15,
+	left: 30
+	 
+});
+
+var buttonView = Ti.UI.createView({
+	backgroundColor: "#44d7d5",
+	height: 50,
+	top: title.top + 20
+	
+});
+
+var fText = Ti.UI.createLabel({
+	text: "Fotos",
+	color: "white",
+	font: {fontSize: 20, familyFont: "times roman", fontWeight: "bold", fontStyle: "Italic"},
+	textAlign: "center"
+});
+
+mainScreen.add(topView,buttonView);
+topView.add(title);
+buttonView.add(fText);
+mainScreen.open();
